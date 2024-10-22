@@ -12,11 +12,22 @@ internal class Program
         CarteCredit carte3 = new CarteCredit(numeroCarte: 003, description: "credit", montant: -20000);
 
 
-        // affichage a lecran 
+        // affichage a lecran des cartes
 
         carte1.AfficherDetails();
         carte2.AfficherDetails();
         carte3.AfficherDetails();
+
+        // Creation des instances paypal
+
+        Paypal account1 = new Paypal(couriel: "kouamherve@gmail.com", descrition: "compte principal", montant: 75000);
+
+        Paypal account2 = new Paypal(couriel: "kouamherve145@gmail.com", descrition: "compte secondaire", montant: 50000);
+
+        // affichage a lecran des compte paypal
+
+        account1.AfficherDetails();
+        account2.AfficherDetails();
 
 
     }
