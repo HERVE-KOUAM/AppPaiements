@@ -20,7 +20,7 @@ namespace AppPaiements
         }
         public void AfficherInfo()
         {
-            Console.WriteLine($"nom....{Nom}... ");
+            Console.WriteLine($"nom d'utilisateur ....{Nom}... ");
             Console.WriteLine($"Liste de vos paiement :");
             foreach (Paiement p in Paiements)
             {

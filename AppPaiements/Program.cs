@@ -11,14 +11,6 @@ internal class Program
         CarteCredit carte2 = new CarteCredit(numeroCarte: 002, description : "credit", montant: -10500);
         CarteCredit carte3 = new CarteCredit(numeroCarte: 003, description: "credit", montant: -20000);
 
-
-        // affichage a lecran des cartes
-        Console.WriteLine("--------------------------------------------------");
-
-        carte1.AfficherDetails();
-        carte2.AfficherDetails();
-        carte3.AfficherDetails();
-
         // Creation des instances paypal
         Console.WriteLine("--------------------------------------------------");
 
@@ -26,12 +18,37 @@ internal class Program
 
         Paypal account2 = new Paypal(couriel: "kouamherve145@gmail.com", descrition: "compte secondaire", montant: 50000);
 
+        // ---------------- debut du menu -------------
+
+        Console.WriteLine("bonjour, lisez et suivez les etapes attentivement ");
+
+           // entrez du nom par lutisateur 
+
+        Console.WriteLine(" -- veuiller entrer votre nom : ");
+
+        string nom = Console.ReadLine();
+
+
+        // affichage a lecran des cartes
+
+        Console.WriteLine(" liste des moyen de payement disponible");
+
+        carte1.AfficherDetails();
+        carte2.AfficherDetails();
+        carte3.AfficherDetails();
+
+        Console.WriteLine("......................................................");
+        
+
         // affichage a lecran des compte paypal
         Console.WriteLine("--------------------------------------------------");
         account1.AfficherDetails();
         account2.AfficherDetails();
 
-        Utilisateur Herve = new Utilisateur("Herve");
+
+        Console.WriteLine("--------------------------------------------------");
+
+        Utilisateur Herve = new Utilisateur(nom);
 
         Herve.AjouterPaiement(carte1);
         Herve.AfficherInfo();
