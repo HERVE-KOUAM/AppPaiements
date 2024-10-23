@@ -13,21 +13,30 @@ internal class Program
 
 
         // affichage a lecran des cartes
+        Console.WriteLine("--------------------------------------------------");
 
         carte1.AfficherDetails();
         carte2.AfficherDetails();
         carte3.AfficherDetails();
 
         // Creation des instances paypal
+        Console.WriteLine("--------------------------------------------------");
 
         Paypal account1 = new Paypal(couriel: "kouamherve@gmail.com", descrition: "compte principal", montant: 75000);
 
         Paypal account2 = new Paypal(couriel: "kouamherve145@gmail.com", descrition: "compte secondaire", montant: 50000);
 
         // affichage a lecran des compte paypal
-
+        Console.WriteLine("--------------------------------------------------");
         account1.AfficherDetails();
         account2.AfficherDetails();
+
+        Utilisateur Herve = new Utilisateur("Herve");
+
+        Herve.AjouterPaiement(carte1);
+        Herve.AfficherInfo();
+
+
 
 
     }
