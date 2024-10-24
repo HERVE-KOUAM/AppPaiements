@@ -19,9 +19,14 @@ namespace AppPaiements
        
         public override void AfficherDetails()
         {
-            Console.WriteLine($" numero carte  : {NumeroCarte} Descrition : { Description} , Montant {Montant} ");
+            Console.WriteLine();
+            Console.WriteLine("-- information de transaction sur lla carte :  ");
+            Console.WriteLine();
+            Console.WriteLine($" numero carte  : {NumeroCarte} ");
+            Console.WriteLine($"Descrition : {Description}");
+            Console.WriteLine($"Montant {Montant}");
 
-            
+
         }
     }
 }
