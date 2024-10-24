@@ -7,15 +7,15 @@ internal class Program
     {
         // creation d'instances de carte 
 
-        CarteCredit carte1 = new CarteCredit(numeroCarte: 001, description : "Debit",  montant : 12500);
-        CarteCredit carte2 = new CarteCredit(numeroCarte: 002, description : "credit", montant: -10500);
+        CarteCredit carte1 = new CarteCredit(numeroCarte: 001, description : "porche Ca",  montant : 650000);
+        CarteCredit carte2 = new CarteCredit(numeroCarte: 002, description : "E-Transfert", montant: 150000);
 
         // Creation des instances paypal
         Console.WriteLine("--------------------------------------------------");
 
-        Paypal account1 = new Paypal(couriel: "kouamherve@gmail.com", descrition: "compte principal", montant: 75000);
+        Paypal account1 = new Paypal(couriel: "kouamherve@gmail.com", descrition: "MSI CA ", montant: 8000);
 
-        Paypal account2 = new Paypal(couriel: "kouamherve145@gmail.com", descrition: "compte secondaire", montant: 50000);
+        Paypal account2 = new Paypal(couriel: "kouamherve145@gmail.com", descrition: "Amazone CA", montant: 50000);
 
         // ---------------- debut du menu -------------
 
