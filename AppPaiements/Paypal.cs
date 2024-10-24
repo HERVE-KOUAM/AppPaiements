@@ -18,12 +18,15 @@ namespace AppPaiements
         public override void AfficherDetails()
         {
 
-            Console.WriteLine($" votre paypal : {Couriel} a un montant de : {Montant} , Description {Description}");
-
-            Console.WriteLine("information du payement paypal : ......");
+            Console.WriteLine($"-----------------------------------------------------------------");
+            Console.WriteLine("information de vos  payement paypal : ......");
             Console.WriteLine($" couriel  paypal : {Couriel} ");
             Console.WriteLine($" montant dépenser : {Montant}");
             Console.WriteLine($" Description {Description}");
+            Console.WriteLine($"-----------------------------------------------------------------");
+
+            Console.WriteLine($" ");
+
 
         }
     }
