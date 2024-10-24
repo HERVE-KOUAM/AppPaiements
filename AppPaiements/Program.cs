@@ -9,7 +9,6 @@ internal class Program
 
         CarteCredit carte1 = new CarteCredit(numeroCarte: 001, description : "Debit",  montant : 12500);
         CarteCredit carte2 = new CarteCredit(numeroCarte: 002, description : "credit", montant: -10500);
-        CarteCredit carte3 = new CarteCredit(numeroCarte: 003, description: "credit", montant: -20000);
 
         // Creation des instances paypal
         Console.WriteLine("--------------------------------------------------");
@@ -31,27 +30,30 @@ internal class Program
 
         // affichage a lecran des cartes
 
-        Console.WriteLine(" liste des moyen de payement disponible");
-
-        carte1.AfficherDetails();
-        carte2.AfficherDetails();
-        carte3.AfficherDetails();
+        Console.WriteLine(" Historique de payement ");
 
         Console.WriteLine("......................................................");
         
 
+        
+
+
+        Console.WriteLine("--------------------------------------------------");
+
+        Utilisateur USER = new Utilisateur(nom);
+
+        // affichage a lecran des cartes
+        USER.AjouterPaiement(carte1);
+        USER.AjouterPaiement(carte2);
+
+
         // affichage a lecran des compte paypal
-        Console.WriteLine("--------------------------------------------------");
-        account1.AfficherDetails();
-        account2.AfficherDetails();
-
+        USER.AjouterPaiement(account1);
+        USER.AjouterPaiement(account2 );
 
         Console.WriteLine("--------------------------------------------------");
 
-        Utilisateur Herve = new Utilisateur(nom);
-
-        Herve.AjouterPaiement(carte1);
-        Herve.AfficherInfo();
+        USER.AfficherInfo();
 
 
 
