@@ -22,7 +22,7 @@ namespace AppPaiements
             Console.WriteLine("information de vos  payement paypal : ......");
             Console.WriteLine($" couriel  paypal : {Couriel} ");
             Console.WriteLine($" montant dépenser : {Montant}");
-            Console.WriteLine($" Description {Description}");
+            Console.WriteLine($" Description : {Description}");
             Console.WriteLine($"-----------------------------------------------------------------");
 
             Console.WriteLine($" ");
